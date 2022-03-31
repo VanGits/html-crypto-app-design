@@ -268,6 +268,10 @@ nav .profile-area{
     gap: 4rem;
 }
 
+.theme-btn{
+    transition: all 500ms ease-in;
+}
+
 nav .profile-area .theme-btn{
     display: flex;
     background: var(--color-light);
