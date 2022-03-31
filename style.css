@@ -142,6 +142,77 @@ small{
 .bg-success-light{
     background:var(--color-success-light)
 }
+/*
+
+PRELOADER
+
+*/
+
+.preloader{
+    background: #1c1d25;
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    animation: loaderAnimation 3s forwards;
+    z-index: 1000;
+    overflow-y: hidden;
+    
+    
+}
+
+.loader__logo {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    transition: all 100ms ease;
+    animation: logoAnimation 1.5s alternate-reverse infinite;
+    
+   
+    
+   
+}
+
+@keyframes loaderAnimation{
+    0%{
+      
+        z-index: 1000;
+        opacity: 1;
+        
+    
+    }
+    80%{
+      
+        z-index: 1000;
+        opacity: 1;
+    
+        
+    }
+    100%{
+        
+        z-index: -1;
+        
+        opacity: 0;
+       
+        
+
+    }
+}
+@keyframes logoAnimation{
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 /* 
 
